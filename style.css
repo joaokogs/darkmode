@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-text:white;
+    --color-bgmain:#212529;
+    --color-bgbody:white;
+
+}
+.darkmodo:root{
+    --color-bgbody:#212529;
+    --color-bgmain:white;
+    --color-text:#212529;
+}
+body{
+    background: var(--color-bgbody);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    transition: .5s ease-in-out background, .5s ease-in-out color;
+
+}
+main {
+    background:var(--color-bgmain);
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out background, .5s ease-in-out color;
+}
+input{
+    display: none;
+}
+.label{
+    color: var(--color-text);
+    cursor: pointer;
+    font-size: 2rem;
+}
